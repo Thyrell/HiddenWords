@@ -14,3 +14,4 @@ A project attempting to use a lossless picture format to hide data (text) within
 3. GIMP extension
 4. other releases
 5. Respectable runtimes
+6. encryption built in. because excess is funny. 
