@@ -31,6 +31,10 @@
             this.ConvertButton = new System.Windows.Forms.Button();
             this.InputBox = new System.Windows.Forms.TextBox();
             this.outputLabel = new System.Windows.Forms.Label();
+            this.LoadedPictureTest = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBrowseButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.LoadedPictureTest)).BeginInit();
             this.SuspendLayout();
             // 
             // ConvertButton
@@ -58,16 +62,42 @@
             this.outputLabel.Size = new System.Drawing.Size(0, 13);
             this.outputLabel.TabIndex = 2;
             // 
+            // LoadedPictureTest
+            // 
+            this.LoadedPictureTest.Location = new System.Drawing.Point(255, 39);
+            this.LoadedPictureTest.Name = "LoadedPictureTest";
+            this.LoadedPictureTest.Size = new System.Drawing.Size(166, 151);
+            this.LoadedPictureTest.TabIndex = 3;
+            this.LoadedPictureTest.TabStop = false;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Supported Image Files(*.BMP;*.JPG)|*.BMP;*.JPG|All files (*.*)|*.*";
+            // 
+            // pictureBrowseButton
+            // 
+            this.pictureBrowseButton.Location = new System.Drawing.Point(255, 210);
+            this.pictureBrowseButton.Name = "pictureBrowseButton";
+            this.pictureBrowseButton.Size = new System.Drawing.Size(75, 23);
+            this.pictureBrowseButton.TabIndex = 4;
+            this.pictureBrowseButton.Text = "Load Image";
+            this.pictureBrowseButton.UseVisualStyleBackColor = true;
+            this.pictureBrowseButton.Click += new System.EventHandler(this.pictureBrowseButton_Click);
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(331, 146);
+            this.ClientSize = new System.Drawing.Size(562, 291);
+            this.Controls.Add(this.pictureBrowseButton);
+            this.Controls.Add(this.LoadedPictureTest);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.InputBox);
             this.Controls.Add(this.ConvertButton);
             this.Name = "TestForm";
             this.Text = "Testform of suffer";
+            ((System.ComponentModel.ISupportInitialize)(this.LoadedPictureTest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,6 +108,9 @@
         private System.Windows.Forms.Button ConvertButton;
         private System.Windows.Forms.TextBox InputBox;
         private System.Windows.Forms.Label outputLabel;
+        private System.Windows.Forms.PictureBox LoadedPictureTest;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button pictureBrowseButton;
     }
 }
 
