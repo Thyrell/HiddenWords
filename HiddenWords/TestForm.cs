@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HiddenWordsLibrary;
 
 namespace HiddenWords
 {
-    public partial class Form1 : Form
+    public partial class TestForm : Form
     {
-        public Form1()
+        public TestForm()
         {
             InitializeComponent();
+        }
+
+        private void convertButton_click(object sender, EventArgs e)
+        {
+            outputLabel.Text = Functions.StringToHex(InputBox.Text);
         }
     }
 }
