@@ -15,7 +15,6 @@ namespace HiddenWords
     {
         public TestForm()
         {
-            
             InitializeComponent();
         }
 
