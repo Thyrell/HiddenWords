@@ -22,5 +22,14 @@ namespace HiddenWords
         {
             outputLabel.Text = Functions.StringToHex(InputBox.Text);
         }
+
+        private void pictureBrowseButton_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                Bitmap loadedPic = new Bitmap(openFileDialog1.FileName);
+                LoadedPictureTest.Image = loadedPic;
+            }
+        }
     }
 }
